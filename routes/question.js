@@ -1,13 +1,13 @@
 const express = require('mongoose')
 const router = express.Router()
-const userController = require('../controllers/question.js')
+const questionController = require('../controllers/question.js')
 
-router.post('/', userController.create)
+router.post('/', questionController.create)
 
-router.get('/new', userController.new)
+router.get('/new', questionController.new)
 
-router.get('/:id', userController.show)
+router.get('/:id', questionController.show)
 
-router.put('/:id', userController.update)
+router.put('/:id', questionController.update)
 
 module.exports = router;
