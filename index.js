@@ -14,9 +14,6 @@ app.get("/", (req, res) => {
 });
 
 
-
-
-
 // app.post('/', (req, res) => {
 //   res.render('index', {
 //     name: req.body.firstName,
