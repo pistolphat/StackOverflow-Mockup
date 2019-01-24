@@ -2,9 +2,18 @@ const express = require('express')
 const router = express.Router()
 const userController = require('../controllers/user.js')
 
-router.post("/", userController.create);
+
+
+// Render a form to create a new User in the DB
 router.get("/new", userController.new);
-router.get("/:id", userController.show);
-router.put("/:", userController.update);
+
+// router.post("/", userController.create);
+
+// router.get("/:id", userController.show);
+
+// router.put("/:id", userController.update);
+
+// router.delete('/:id', userController.destroy)
+
 
 module.exports = router;
